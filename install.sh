@@ -13,3 +13,18 @@ yum install nasm -y
 yum install wireshark -y
 yum install libreoffice -y
 yum install git -y
+
+# install docker
+yum remove docker \
+		   docker-client \
+		   docker-client-latest \
+		   docker-common \
+		   docker-latest \
+		   docker-latest-logrotate \
+		   docker-logrotate \
+		   docker-engine
+
+yum install docker-ce docker-ce-cli containerd.io
+groupadd docker
+usermod -aG docker $USER
+
