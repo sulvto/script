@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 # install on-my-zsh now
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -13,6 +13,9 @@ yum install nasm -y
 yum install wireshark -y
 yum install libreoffice -y
 yum install git -y
+yum install nmap -y
+yum install copyq -y
+yum install notepadqq -y
 
 # install docker
 yum remove docker \
