@@ -31,3 +31,9 @@ yum install docker-ce docker-ce-cli containerd.io
 groupadd docker
 usermod -aG docker $USER
 
+
+
+# vim
+# vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+		    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
