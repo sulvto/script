@@ -1,0 +1,3 @@
+01 * * * * echo `date` > ~/live.txt 2>&1
+1 1 * * * ls *.png | grep $(date -d '-2 day' '+%Y-%m-%d') |xargs rm
+
