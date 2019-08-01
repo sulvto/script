@@ -17,6 +17,7 @@ yum install nmap -y
 yum install copyq -y
 yum install notepadqq -y
 yum install iotop iftop -y
+yum install fzf -y
 
 # install docker
 yum remove docker \
