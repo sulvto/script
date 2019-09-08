@@ -1,0 +1,2 @@
+01 * * * * echo `date` > ~/live.txt 2>&1
+1 1 * * * find /home/sulvto/towin10 -mtime +3 | grep -E '[0-9]{4,4}-[0-9]{1,2}-[0-9]{1,2}.*png$' | xargs rm

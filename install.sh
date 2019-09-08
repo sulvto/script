@@ -16,6 +16,8 @@ yum install git -y
 yum install nmap -y
 yum install copyq -y
 yum install notepadqq -y
+yum install iotop iftop -y
+yum install fzf -y
 
 # install docker
 yum remove docker \
@@ -31,3 +33,9 @@ yum install docker-ce docker-ce-cli containerd.io
 groupadd docker
 usermod -aG docker $USER
 
+
+
+# vim
+# vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+		    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
