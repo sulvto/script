@@ -39,3 +39,13 @@ usermod -aG docker $USER
 # vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 		    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
+
+
+mkdir ~/development/github/ -p
+
+mkdir ~/development/workspace/ -p
+
+cd ~/development/workspace/
+
