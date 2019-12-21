@@ -38,6 +38,9 @@ def loop_login(status):
                 print('login success ', passd_raw)
                 status.value = 1 
                 break
+        except BaseException as e:
+            print('ConnectionError')
+            pass
         finally:
             pass
 
