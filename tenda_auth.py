@@ -31,12 +31,15 @@ def loop_login(status):
     passd_raw = ''.join(random.sample(random_raw, passd_length))
     password = base64.b64encode(passd_raw.encode('utf-8'))
     while status.value == 0:
-        print('login-> ', passd_raw)
-        if login(password) == 200:
-            print(passd_raw)
-            print('login success ', passd_raw)
-            status.value = 1 
-            break
+        try:
+            print('login-> ', passd_raw)
+            if login(password) == 200:
+                print(passd_raw)
+                print('login success ', passd_raw)
+                status.value = 1 
+                break
+        finally:
+            pass
 
 if __name__ == '__main__':
     status = Value('i', 0)
